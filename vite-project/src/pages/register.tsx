@@ -6,18 +6,18 @@ export default function Register() {
   return (
     <>
       <div>
-        <h1>Sign Up:</h1>
+        <h1>Page Register</h1>
         <form action="" method="post">
           <div>
-            <label> Name: </label>
-            <input type="text" name="nama" id="nama" required />
+            <label htmlFor="name"> Name: </label>
+            <input type="text" name="nama" id="nama" required autoFocus />
           </div>
           <div>
-            <label> E-mail Address: </label>
+            <label htmlFor="email"> E-mail Address: </label>
             <input type="email" name="email" id="email" required />
           </div>
           <div>
-            <label>Password: </label>
+            <label htmlFor="password">Password: </label>
             <input
               type={showPassword ? "text" : "password"}
               value={password}
@@ -25,7 +25,9 @@ export default function Register() {
               required
               onChange={(e) => setPassword(e.target.value)}
             />
-            <label htmlFor="check">Show Password</label>
+            <label htmlFor="check" className="showpass">
+              Show Password
+            </label>
             <input
               type="checkbox"
               id="check"
@@ -34,7 +36,7 @@ export default function Register() {
             />
           </div>
           <div>
-            <button formTarget="#">Submit</button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
