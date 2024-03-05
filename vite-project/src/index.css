@@ -1,68 +1,99 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
+form {
+  margin: 0;
+  padding: 0;
+}
+form div {
+  margin: 10px;
+}
+label {
+  display: block;
+  margin: 10px;
+}
+input {
+  margin: 2px;
+  padding: 3px 2px;
+  font-size: 20px;
+}
+input:invalid,
+input:required:invalid {
+  border: none;
+  outline: 2px solid red;
+  border-radius: 2px;
+}
+input:valid,
+input:required {
+  border: 1px solid lightgreen;
+  outline: inherit;
+  border-radius: inherit;
+}
+button {
+  margin: 5px;
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10%;
+  margin-top: 30px;
+  cursor: pointer;
+}
+button:hover {
+  transition-duration: 0.2s;
+  background-color: green;
+  color: white;
+}
+.reg {
+  background-color: rgb(193, 189, 189);
+}
+.reg:hover {
+  background-color: gray;
+  color: white;
+  transition-duration: 0.2s;
+}
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  background-color: inherit;
+  color: inherit;
+  margin-top: 20px;
 }
-a:hover {
-  color: #535bf2;
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/spikes.png);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.tombol {
+  margin: 5px;
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10%;
+  margin-top: 30px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.tombol:hover {
+  transition-duration: 0.2s;
+  background-color: green;
+  color: white;
 }
