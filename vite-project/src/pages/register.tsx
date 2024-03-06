@@ -31,7 +31,6 @@ export default function Register() {
             <input
               type="checkbox"
               id="check"
-              value={showPassword}
               onChange={() => setShowPassword((prev) => !prev)}
             />
           </div>
