@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Heading } from "@chakra-ui/react";
 
 export default function Register() {
   const [password, setPassword] = useState("");
@@ -6,7 +7,7 @@ export default function Register() {
   return (
     <>
       <div>
-        <h1>Page Register</h1>
+        <Heading as="h2"> Page Register </Heading>
         <form action="" method="post">
           <div>
             <label htmlFor="name"> Name: </label>
@@ -35,7 +36,9 @@ export default function Register() {
             />
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="tombol">
+              Submit
+            </button>
           </div>
         </form>
       </div>

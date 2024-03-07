@@ -3,7 +3,7 @@
   padding: 0;
   text-align: center;
 }
-h1 {
+h2 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -36,21 +36,19 @@ input:required {
   outline: inherit;
   border-radius: inherit;
 }
-button {
+.tombol {
+  background-color: #08d98c;
   margin: 5px;
-  background-color: #04aa6d; /* Green */
-  border: none;
-  color: white;
+  color: rgb(15, 12, 12);
   padding: 10px 22px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 10%;
   margin-top: 30px;
   cursor: pointer;
 }
-button:hover {
+
+.tombol:hover {
   transition-duration: 0.2s;
   background-color: green;
   color: white;
@@ -64,38 +62,5 @@ button:hover {
   transition-duration: 0.2s;
 }
 a {
-  background-color: inherit;
-  color: inherit;
   margin-top: 20px;
-}
-
-.dark-mode {
-  background-color: #222;
-  color: #fff;
-}
-
-body {
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/spikes.png);
-}
-.tombol {
-  margin: 5px;
-  background-color: #04aa6d; /* Green */
-  border: none;
-  color: white;
-  padding: 10px 22px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10%;
-  margin-top: 30px;
-  cursor: pointer;
-}
-
-.tombol:hover {
-  transition-duration: 0.2s;
-  background-color: green;
-  color: white;
-}
-.showpass {
 }
