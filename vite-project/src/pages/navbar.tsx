@@ -18,12 +18,12 @@ export default function Nav() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box>Network Call Practice</Box>
           <Box>
-            <Link href="#" isExternal>
+            <Link href="/">
               Users <ExternalLinkIcon mx="2px" />
             </Link>
           </Box>
           <Box>
-            <Link href="#" isExternal>
+            <Link href="/register">
               Register <ExternalLinkIcon mx="2px" />
             </Link>
           </Box>
