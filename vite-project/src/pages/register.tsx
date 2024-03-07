@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Heading } from "@chakra-ui/react";
+import Navbar from "./navbar";
 
 export default function Register() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   return (
     <>
+      <Navbar />
       <div>
         <Heading as="h2"> Page Register </Heading>
         <form action="" method="post">
